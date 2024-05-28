@@ -9,16 +9,16 @@
 SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 3.1.50。
 WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 3.1.50，否则会出现不可预料的错误。
 所有构建通过使用 -DFEATURE_thread=ON 启用了线程支持。
-备注 Qt 在 WebAssembly 平台上只能构建静态库。 静态构建 交叉构建主机：Windows Qt6.7.0-WebAssembly-emscripten3.1.50-xWindows-x86_64-MinGW13.2.0-msvcrt-20240403.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22631工具链版本：emscripten-3.1.50备注： 交叉构建主机：Linux Qt6.7.0-WebAssembly-emscripten3.1.50-xLinux-x86_64-gcc11.4.1-20240402.tar.xz 下载地址： SourceForge 链接 构建主机：Rocky Linux 9.3工具链版本：emscripten-3.1.50备注： 交叉构建主机：macOS Qt6.7.0-WebAssembly-emscripten3.1.50-xmacOS-Universal-AppleClang14.0.3-20240403.tar.xz 下载地址： SourceForge 链接 构建主机：macOS 13.6.6工具链版本：emscripten-3.1.50备注： ">
+备注 Qt 在 WebAssembly 平台上只能构建静态库。 静态构建 交叉构建主机：Windows Qt6.7.1-WebAssembly-emscripten3.1.50-xWindows-x86_64-MinGW13.2.0-msvcrt-20240526.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22631工具链版本：emscripten-3.1.50备注： 交叉构建主机：Linux Qt6.7.1-WebAssembly-emscripten3.1.50-xLinux-x86_64-gcc11.4.1-20240526.tar.xz 下载地址： SourceForge 链接 构建主机：Rocky Linux 9.4工具链版本：emscripten-3.1.50备注： 交叉构建主机：macOS Qt6.7.1-WebAssembly-emscripten3.1.50-xmacOS-Universal-AppleClang15.0.0-20240526.tar.xz 下载地址： SourceForge 链接 构建主机：macOS 14.5工具链版本：emscripten-3.1.50备注： ">
     <meta name="author" content="Fsu0413">
-    <meta itemprop="name" content="6.7.0 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建">
+    <meta itemprop="name" content="6.7.1 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建">
     <meta itemprop="description" content=" 备注 此版本中附带下列数据库：
 SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 所有包使用了于 Qt Wiki 中推荐的 emscripten SDK 版本 3.1.50。
 WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必须要使用 SDK 版本 3.1.50，否则会出现不可预料的错误。
 所有构建通过使用 -DFEATURE_thread=ON 启用了线程支持。
-备注 Qt 在 WebAssembly 平台上只能构建静态库。 静态构建 交叉构建主机：Windows Qt6.7.0-WebAssembly-emscripten3.1.50-xWindows-x86_64-MinGW13.2.0-msvcrt-20240403.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22631工具链版本：emscripten-3.1.50备注： 交叉构建主机：Linux Qt6.7.0-WebAssembly-emscripten3.1.50-xLinux-x86_64-gcc11.4.1-20240402.tar.xz 下载地址： SourceForge 链接 构建主机：Rocky Linux 9.3工具链版本：emscripten-3.1.50备注： 交叉构建主机：macOS Qt6.7.0-WebAssembly-emscripten3.1.50-xmacOS-Universal-AppleClang14.0.3-20240403.tar.xz 下载地址： SourceForge 链接 构建主机：macOS 13.6.6工具链版本：emscripten-3.1.50备注： ">
+备注 Qt 在 WebAssembly 平台上只能构建静态库。 静态构建 交叉构建主机：Windows Qt6.7.1-WebAssembly-emscripten3.1.50-xWindows-x86_64-MinGW13.2.0-msvcrt-20240526.7z 下载地址： SourceForge 链接 构建主机：Windows 11 10.0.22631工具链版本：emscripten-3.1.50备注： 交叉构建主机：Linux Qt6.7.1-WebAssembly-emscripten3.1.50-xLinux-x86_64-gcc11.4.1-20240526.tar.xz 下载地址： SourceForge 链接 构建主机：Rocky Linux 9.4工具链版本：emscripten-3.1.50备注： 交叉构建主机：macOS Qt6.7.1-WebAssembly-emscripten3.1.50-xmacOS-Universal-AppleClang15.0.0-20240526.tar.xz 下载地址： SourceForge 链接 构建主机：macOS 14.5工具链版本：emscripten-3.1.50备注： ">
     <meta itemprop="wordCount" content="61">
-    <title>6.7.0 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建</title>
+    <title>6.7.1 的 WebAssembly 版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/6.7-series/6.7.0-for-webassembly/index.html" rel="alternate" hreflang="x-default">
     <link href="/6.7-series/6.7.0-for-webassembly/index.html" rel="alternate" hreflang="en">
     <link href="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html" rel="alternate" hreflang="zh-cn">
@@ -108,7 +108,7 @@ WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必�
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/index.html"><span itemprop="name">Fsu0413 的原版 Qt 构建</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/zh-cn/6.7-series/index.html"><span itemprop="name">6.7 系列</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.7.0 的 WebAssembly 版本</span><meta itemprop="position" content="3"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">6.7.1 的 WebAssembly 版本</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button>
@@ -129,7 +129,7 @@ WebAssembly 不支持二进制兼容性。在构建自己的代码的时候必�
             <header class="headline">
             </header>
 
-<h1 id="670-的-webassembly-版本">6.7.0 的 WebAssembly 版本</h1>
+<h1 id="671-的-webassembly-版本">6.7.1 的 WebAssembly 版本</h1>
 
 
 <div class="box notices cstyle info">
@@ -172,32 +172,32 @@ Qt 在 WebAssembly 平台上只能构建静态库。</div>
 <h2 id="静态构建">静态构建</h2>
 <h3 id="交叉构建主机windows">交叉构建主机：Windows</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.7.0-WebAssembly-emscripten3.1.50-xWindows-x86_64-MinGW13.2.0-msvcrt-20240403.7z</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.7.1-WebAssembly-emscripten3.1.50-xWindows-x86_64-MinGW13.2.0-msvcrt-20240526.7z</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/WebAssembly/Qt6.7.0-WebAssembly-emscripten3.1.50-xWindows-x86_64-MinGW13.2.0-msvcrt-20240403.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/WebAssembly/Qt6.7.1-WebAssembly-emscripten3.1.50-xWindows-x86_64-MinGW13.2.0-msvcrt-20240526.7z" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
             <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Windows 11 10.0.22631</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-3.1.50</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="交叉构建主机linux">交叉构建主机：Linux</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.7.0-WebAssembly-emscripten3.1.50-xLinux-x86_64-gcc11.4.1-20240402.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.7.1-WebAssembly-emscripten3.1.50-xLinux-x86_64-gcc11.4.1-20240526.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/WebAssembly/Qt6.7.0-WebAssembly-emscripten3.1.50-xLinux-x86_64-gcc11.4.1-20240402.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/WebAssembly/Qt6.7.1-WebAssembly-emscripten3.1.50-xLinux-x86_64-gcc11.4.1-20240526.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Rocky Linux 9.3</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-3.1.50</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">Rocky Linux 9.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-3.1.50</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 <h3 id="交叉构建主机macos">交叉构建主机：macOS</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.7.0-WebAssembly-emscripten3.1.50-xmacOS-Universal-AppleClang14.0.3-20240403.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.7.1-WebAssembly-emscripten3.1.50-xmacOS-Universal-AppleClang15.0.0-20240526.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/WebAssembly/Qt6.7.0-WebAssembly-emscripten3.1.50-xmacOS-Universal-AppleClang14.0.3-20240403.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.7/WebAssembly/Qt6.7.1-WebAssembly-emscripten3.1.50-xmacOS-Universal-AppleClang15.0.0-20240526.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.6</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-3.1.50</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 14.5</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">emscripten-3.1.50</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
@@ -224,10 +224,10 @@ Qt 在 WebAssembly 平台上只能构建静态库。</div>
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/zh-cn/5.15-series/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-d374b83d03acc30b906324bf7f6b9899" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-windows/index.html">5.15.13 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-macos/index.html">5.15.13 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-android/index.html">5.15.13 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-windows/index.html">5.15.14 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-macos/index.html">5.15.14 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-android/index.html">5.15.14 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html">5.15.14 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.2-series/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-windows/index.html">6.2.8 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-macos/index.html">6.2.8 的 macOS 版本</a></li>
@@ -239,10 +239,10 @@ Qt 在 WebAssembly 平台上只能构建静态库。</div>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.7-series/index.html" class="parent "><a class="padding" href="/zh-cn/6.7-series/index.html">6.7 系列</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-windows/index.html">6.7.0 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-macos/index.html">6.7.0 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-android/index.html">6.7.0 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html" class="active"><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html">6.7.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-windows/index.html">6.7.1 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-macos/index.html">6.7.1 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-android/index.html">6.7.1 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html" class="active"><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html">6.7.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/notesforthisrepo/index.html">本版本库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -329,7 +329,7 @@ Qt 在 WebAssembly 平台上只能构建静态库。</div>
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 22 May 2024 21:30:07 CST</p>
+Site generated: Wed, 29 May 2024 00:03:57 CST</p>
 
           </div>
         </div>

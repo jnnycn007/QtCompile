@@ -8,14 +8,16 @@
     <meta name="description" content="备注 此版本中附带下列数据库：
 SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 iODBC （macOS内置，已被 macOS 弃用许久。仅动态构建）：使用 -DFEATURE_sql_odbc=ON 内建在这份包里。 MariaDB Connector/C 3.3 系列（仅动态构建）：使用 -DFEATURE_sql_mysql=ON 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
 这个版本包含下列后端：
-OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持（仅动态构建） macOS 提供的 Secure Transport library，使用 -DFEATURE_securetransport=ON 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 备注 这个版本我只会提供统一二进制构建。 统一二进制在 Intel 和 Apple 芯片的 Mac 上都能原生运行。 动态 / 共享构建 macOS-Universal Qt6.">
+OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持（仅动态构建） macOS 提供的 Secure Transport library，使用 -DFEATURE_securetransport=ON 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 此版本不附带 QtWebEngine。
+补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 备注 这个版本我只会提供统一二进制构建。 统一二进制在 Intel 和 Apple 芯片的 Mac 上都能原生运行。 动态 / 共享构建 macOS-Universal Qt6.">
     <meta name="author" content="Fsu0413">
     <meta itemprop="name" content="6.5.3 的 macOS 版本 :: Fsu0413 的原版 Qt 构建">
     <meta itemprop="description" content="备注 此版本中附带下列数据库：
 SQLite （随 Qt 一起分发）：使用 -DFEATURE_sql_sqlite=ON -DFEATURE_system_sqlite=OFF 内建在这份包里。 iODBC （macOS内置，已被 macOS 弃用许久。仅动态构建）：使用 -DFEATURE_sql_odbc=ON 内建在这份包里。 MariaDB Connector/C 3.3 系列（仅动态构建）：使用 -DFEATURE_sql_mysql=ON 内建在这份包里。 备注 从 Qt 6.2 开始 Qt 将 TLS 后端改成插件的形式。
 这个版本包含下列后端：
-OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持（仅动态构建） macOS 提供的 Secure Transport library，使用 -DFEATURE_securetransport=ON 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 备注 这个版本我只会提供统一二进制构建。 统一二进制在 Intel 和 Apple 芯片的 Mac 上都能原生运行。 动态 / 共享构建 macOS-Universal Qt6.">
-    <meta itemprop="wordCount" content="95">
+OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启用链接的 OpenSSL 支持（仅动态构建） macOS 提供的 Secure Transport library，使用 -DFEATURE_securetransport=ON 备注 所有构建配置了 -DFEATURE_icu=OFF 原因是我觉得 ICU 库太大了，并且绝大多数场合对一般用户用处不大。 备注 此版本不附带 QtWebEngine。
+补丁（多数是 CVE 问题） 我在构建 Qt 时应用补丁。想查看补丁列表的话，参考此页。 备注 这个版本我只会提供统一二进制构建。 统一二进制在 Intel 和 Apple 芯片的 Mac 上都能原生运行。 动态 / 共享构建 macOS-Universal Qt6.">
+    <meta itemprop="wordCount" content="108">
     <title>6.5.3 的 macOS 版本 :: Fsu0413 的原版 Qt 构建</title>
     <link href="/6.5-series/6.5.3-for-macos/index.html" rel="alternate" hreflang="x-default">
     <link href="/6.5-series/6.5.3-for-macos/index.html" rel="alternate" hreflang="en">
@@ -167,6 +169,14 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
 </div>
 
 
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fas fa-info-circle"></i> 备注</div>
+  <div class="box-content">
+
+<p>此版本不附带 QtWebEngine。</p>
+</div>
+</div>
+
 <div class="box notices cstyle primary">
   <div class="box-label"><i class="fas fa-check-square"></i> 补丁（多数是 CVE 问题）</div>
   <div class="box-content">
@@ -185,32 +195,32 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
 <h2 id="动态--共享构建">动态 / 共享构建</h2>
 <h3 id="macos-universal">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-20240216.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang15.0.0-20240528.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-20240216.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang15.0.0-20240528.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 14.5</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 15.0.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
         </tbody>
     </table>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20240215.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang15.0.0-noFramework-20240528.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-noFramework-20240215.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang15.0.0-noFramework-20240528.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.4</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 14.5</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 15.0.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"><strong>NO WEBENGINE</strong> because of compile failure</td></tr>
         </tbody>
     </table>
 <h2 id="静态-full-构建">静态 <code>Full</code> 构建</h2>
 <h3 id="macos-universal-1">macOS-Universal</h3>
 <table>
-        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang14.0.3-staticFull-20240510.tar.xz</b></th></tr></thead>
+        <thead><tr><th colspan="5" width="100%" class="fsu0413_qtAddressHeader"><b>Qt6.5.3-macOS-Universal-AppleClang15.0.0-staticFull-20240527.tar.xz</b></th></tr></thead>
         <tbody>
             <tr><td width="20%"><b>下载地址：</b></td>
-                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang14.0.3-staticFull-20240510.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
+                <td colspan="4" width="80%"><span class="btn cstyle interactive orange"><a href="https://sourceforge.net/projects/fsu0413-qtbuilds/files/Qt6.5/macOS-Universal/Qt6.5.3-macOS-Universal-AppleClang15.0.0-staticFull-20240527.tar.xz" target="_blank"><span class="title">SourceForge 链接</span></a></span></td>
             </tr>
-            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 13.6.6</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 14.0.3</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
+            <tr><td width="20%"><b>构建主机：</b></td><td width="30%">macOS 14.5</td><td colspan="2" width="20%"><b>工具链版本：</b></td><td width="30%">AppleClang 15.0.0</td></tr><tr><td width="20%"><b>备注：</b></td><td colspan="4" width="80%"></td></tr>
         </tbody>
     </table>
 
@@ -237,10 +247,10 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/zh-cn/5.15-series/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/index.html">5.15 系列</a><ul id="R-subsections-d374b83d03acc30b906324bf7f6b9899" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-windows/index.html">5.15.13 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-macos/index.html">5.15.13 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-android/index.html">5.15.13 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html">5.15.13 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-windows/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-windows/index.html">5.15.14 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-macos/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-macos/index.html">5.15.14 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-android/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-android/index.html">5.15.14 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/5.15-series/5.15.11-for-webassembly/index.html">5.15.14 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.2-series/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/index.html">6.2 系列</a><ul id="R-subsections-f3427fcbeda6da3be7e077b630aae545" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-windows/index.html">6.2.8 的 Windows 版本</a></li>
           <li data-nav-id="/zh-cn/6.2-series/6.2.6-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.2-series/6.2.6-for-macos/index.html">6.2.8 的 macOS 版本</a></li>
@@ -252,10 +262,10 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-android/index.html">6.5.3 的安卓版本</a></li>
           <li data-nav-id="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.5-series/6.5.3-for-webassembly/index.html">6.5.3 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/6.7-series/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/index.html">6.7 系列</a><ul id="R-subsections-7bba749b3ce093fe170f5d1dec09c5d9" class="morespace collapsible-menu">
-          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-windows/index.html">6.7.0 的 Windows 版本</a></li>
-          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-macos/index.html">6.7.0 的 macOS 版本</a></li>
-          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-android/index.html">6.7.0 的安卓版本</a></li>
-          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html">6.7.0 的 WebAssembly 版本</a></li></ul></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-windows/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-windows/index.html">6.7.1 的 Windows 版本</a></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-macos/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-macos/index.html">6.7.1 的 macOS 版本</a></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-android/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-android/index.html">6.7.1 的安卓版本</a></li>
+          <li data-nav-id="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html" class=""><a class="padding" href="/zh-cn/6.7-series/6.7.0-for-webassembly/index.html">6.7.1 的 WebAssembly 版本</a></li></ul></li>
           <li data-nav-id="/zh-cn/miscellaneous/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/index.html">杂项</a><ul id="R-subsections-fbd0e6ecd70e8ab847a5d20136c55334" class="morespace collapsible-menu">
           <li data-nav-id="/zh-cn/miscellaneous/notesforthisrepo/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/notesforthisrepo/index.html">本版本库的一些备注</a></li>
           <li data-nav-id="/zh-cn/miscellaneous/current-build-status/index.html" class=""><a class="padding" href="/zh-cn/miscellaneous/current-build-status/index.html">当前构建状态</a></li>
@@ -342,7 +352,7 @@ OpenSSL 3.0 系列，使用 -DFEATURE_openssl=ON -DINPUT_openssl=linked 来启�
             </ul>
           </div>
           <div id="R-footer" class="footerFooter showFooter"><p class="fsu0413_leftFooter">Code less. Create more. Deploy everywhere.<br />
-Site generated: Wed, 22 May 2024 21:30:07 CST</p>
+Site generated: Wed, 29 May 2024 00:03:57 CST</p>
 
           </div>
         </div>
